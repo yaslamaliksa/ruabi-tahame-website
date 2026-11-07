@@ -1,0 +1,14 @@
+HERO IMAGE / JEDDAH TOWER
+
+Work: Jeddah Tower Building Progress as of 13-Jul-2016 004.jpg
+Photographer: Ammar shaker
+Source: https://commons.wikimedia.org/wiki/File:Jeddah_Tower_Building_Progress_as_of_13-Jul-2016_004.jpg
+Original: https://upload.wikimedia.org/wikipedia/commons/a/a8/Jeddah_Tower_Building_Progress_as_of_13-Jul-2016_004.jpg
+License: Creative Commons Attribution-ShareAlike 4.0 International
+License URL: https://creativecommons.org/licenses/by-sa/4.0/
+
+Local file: hero-jeddah-tower.webp
+Changes: auto-oriented, resized to 1800x2400 and compressed to WebP. CSS controls responsive crop, brightness, saturation and overlay for display.
+The adapted image is distributed under CC BY-SA 4.0.
+
+This historical construction photograph is used as an illustrative Saudi architectural image. It is not presented as a project by Ruabi Enjaz Tahame, and does not show the current construction status.
