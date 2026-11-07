@@ -50,6 +50,7 @@ function activate(index) {
   $('#scroll-hint').setAttribute('aria-label', index === chapters.length - 1 ? 'العودة إلى البداية' : 'انتقل إلى القسم التالي');
   $('#scroll-hint>span:nth-child(2)').textContent = index === chapters.length - 1 ? 'العودة إلى البداية' : 'مرّر لاكتشاف المزيد';
   window.SiteMotion?.enter(chapters[index], previousIndex);
+  window.SiteHeroVideo?.sync();
 }
 function updateFromScroll() {
   const marker = viewport.scrollTop + viewport.clientHeight * .34;

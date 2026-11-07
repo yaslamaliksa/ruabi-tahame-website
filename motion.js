@@ -149,9 +149,9 @@
       if (inView(element)) reveal(element, plan); else observer.observe(element);
     });
     if (chapter.id === 'home') {
-      animate(chapter.querySelector('.hero-photo img'), [
+      animate(chapter.querySelector('.hero-photo video, .hero-photo img'), [
         { transform: 'scale(1.15)', filter: 'brightness(.65) saturate(.65)' },
-        { transform: 'scale(1)', filter: 'brightness(.95) saturate(.84)' }
+        { transform: 'scale(1)', filter: chapter.querySelector('.hero-photo video') ? 'brightness(1.04) saturate(.96)' : 'brightness(.95) saturate(.84)' }
       ], { duration: 1850 });
     }
     bindPointer();

@@ -14,3 +14,14 @@
 .hero-photo-credit a{color:inherit;text-underline-offset:3px}.hero-photo-credit a:hover{text-decoration:underline;color:#fff}
 @media(max-width:900px){.hero-photo img{object-position:50% 28%}.hero-photo-credit{left:40px;font-size:8px}}
 @media(max-width:600px){.hero-photo{opacity:.78}.hero-photo img{object-position:50% 30%}.hero-photo-credit{left:22px;bottom:calc(var(--dock) + 45px);font-size:8px}}
+
+/* Supplied Riyadh film: full-bleed, silent and controlled. */
+.hero-photo.has-video{width:100%;opacity:1}
+.hero-photo.has-video video{display:block;position:relative;z-index:1;width:100%;height:100%;object-fit:cover;object-position:50% 50%;filter:brightness(1.04) saturate(.96)}
+.hero-photo.has-video video[hidden]{display:none}
+.hero-photo.has-video .hero-video-poster{position:absolute;inset:0;z-index:0;object-position:50% 50%;filter:brightness(1.04) saturate(.96)}
+.hero.has-hero-video .hero-shade{background:linear-gradient(270deg,#102f32fa 0%,#102f32ed 24%,#102f32b8 46%,#102f3233 77%,#102f321f),linear-gradient(0deg,#102f32d6 0%,transparent 40%,#102f3226)}
+.hero-video-toggle{position:absolute;left:4.2%;bottom:calc(var(--dock) + 50px);z-index:3;display:flex;align-items:center;gap:9px;padding:8px 12px;border:1px solid #ffffff48;background:#102f3270;color:#e0e9e0;font-size:10px;backdrop-filter:blur(8px)}
+.hero-video-toggle svg{width:15px;height:15px}.hero-video-toggle:hover{background:#28605e}
+@media(max-width:900px){.hero-video-toggle{left:40px}}
+@media(max-width:600px){.hero.has-hero-video .hero-shade{background:linear-gradient(270deg,#102f32e6,#102f3270),linear-gradient(0deg,#102f32 0%,transparent 55%,#102f3226)}.hero-video-toggle{left:22px;bottom:calc(var(--dock) + 45px);font-size:9px;padding:6px 9px}.hero-video-toggle svg{width:13px;height:13px}}

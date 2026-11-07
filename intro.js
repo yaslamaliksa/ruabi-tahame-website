@@ -81,6 +81,7 @@
   }
   function revealSite() {
     revealing = true;
+    window.SiteHeroVideo?.sync();
     try { window.SiteMotion?.replay(); } catch { /* Decorative motion cannot block entry. */ }
   }
   function animateTo(target, duration, complete) {
@@ -108,6 +109,7 @@
     clearTimeout(safetyTimer);
     if (!immediate) setProgress(1);
     active = false;
+    window.SiteHeroVideo?.sync();
     drag = null;
     intro.hidden = true;
     window.SiteCrane3D?.close();
@@ -135,6 +137,7 @@
     if (active) return;
     stop();
     active = true; revealing = false; lifted = false; progress = 0; drag = null;
+    window.SiteHeroVideo?.sync();
     restoreFocus = document.activeElement;
     background = [...document.body.children].filter(element => element !== intro && element.tagName !== 'SCRIPT' && element.tagName !== 'SVG').map(element => [element, element.inert]);
     background.forEach(([element]) => { element.inert = true; });
